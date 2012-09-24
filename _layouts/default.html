@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>{{ page.title }}</title>
+<meta name="description" content="">
+<meta name="author" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" href="/css/skeleton.css">
+<link rel="stylesheet" href="/css/base.css">
+<link rel="stylesheet" href="/css/wireframe.css">
+<link rel="shortcut icon" href="./favicon.ico">
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+<body>
+	<div class="container">
+		<header class="sixteen columns">
+			<nav>
+				<ul>
+					<li class="six columns alpha masthead">
+						<h1 class="remove-bottom"><a href="/">Yulquen</a></h1>
+						<h5>Version 0.1&alpha;<sup class="template annotation"><a href="#anno1" name="annoloc1">1</a></sup></h5>
+					</li>
+					<li class="six columns spacer">&nbsp;</li>
+					<li class="four columns download omega"><div class="area cta" style="margin-top: 0.5em;"><a href="./form.html"><strong>Form Demo</strong></a><sup class="template annotation"><a href="#anno2" name="annoloc2">2</a></sup></div></li>
+				</ul>
+			</nav>
+			<hr />
+		</header>
+		
+		<div class="sixteen columns">
+			{{ content }}
+		</div>
+		
+		<footer class="sixteen columns row"><hr />Yulquen is a <a href="http://nickd.org">nickd</a> thing, and it's licensed under the <a href="http://sam.zoy.org/wtfpl/">WTFPL</a>. <a href="mailto:nickd@nickd.org">Email</a>.<sup class="template annotation"><a href="#anno3" name="annoloc3">3</a></sup></footer>
+	</div>
+	
+	<div class="annotations">
+		<h2>{{ page.location}}: {{ page.title }}</h2>
+		<p>{{ page.description }}</p>
+		<ol>
+			{{page.anno | markdownify }}
+		</ol>
+	</div>
+</body>
+</html>
